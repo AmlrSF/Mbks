@@ -16,6 +16,29 @@ A RESTful API for managing books, built with **Express.js** and **MongoDB Atlas*
 
 ---
 
+## 📜 API Endpoints
+
+- ✅ **Add a new book**  
+  - **Endpoint**: `POST /api/books`  
+  - **Authentication**: Required  
+
+- ✅ **Retrieve all books**  
+  - **Endpoint**: `GET /api/books`  
+  - **Authentication**: Required  
+
+- ✅ **Get details of a specific book**  
+  - **Endpoint**: `GET /api/books/:id`  
+  - **Authentication**: Required  
+
+- ✅ **Update a book's details**  
+  - **Endpoint**: `PUT /api/books/:id`  
+  - **Authentication**: Required  
+
+- ✅ **Delete a book**  
+  - **Endpoint**: `DELETE /api/books/:id`  
+  - **Authentication**: Required  
+
+
 ## 🛠️ Prerequisites
 
 Make sure you have these installed:
@@ -29,13 +52,25 @@ Make sure you have these installed:
 ## 🚀 Installation & Setup
 
 ### Clone the repository:
-
 ```bash
 git clone <repository_url>
 cd book-management-api
 ```
 
 ### Install dependencies:
+```bash
+npm install
+```
+
+### Install dependencies:
+**Create a .env file in the root directory.**
+**Add the following configuration:**
+```bash
+PORT=5000
+MONGO_URI=<your_mongo_atlas_connection_string>
+```
+
+### Start the server:
 
 ```bash
 npm install
