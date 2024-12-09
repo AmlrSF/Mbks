@@ -33,3 +33,8 @@ Make sure you have these installed:
 ```bash
 git clone <repository_url>
 cd book-management-api
+
+### Install dependencies:
+
+```bash
+npm install
